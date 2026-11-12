@@ -5,7 +5,6 @@ import { Projects } from "@/components/Projects";
 import { Architecture } from "@/components/Architecture";
 import { Experience } from "@/components/Experience";
 import { Credentials } from "@/components/Credentials";
-import { GitHubSection } from "@/components/GitHubSection";
 import { Contact } from "@/components/Contact";
 
 export default function HomePage() {
@@ -18,7 +17,6 @@ export default function HomePage() {
       <Architecture />
       <Experience />
       <Credentials />
-      <GitHubSection />
       <Contact />
     </>
   );

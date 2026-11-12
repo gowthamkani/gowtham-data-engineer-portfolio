@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { navItems } from "@/data/nav";
 import { profile } from "@/data/profile";
 import { ThemeToggle } from "./ThemeToggle";
-import { DownloadIcon, GitHubIcon } from "./Icons";
+import { DownloadIcon } from "./Icons";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -64,15 +64,6 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
-          <a
-            href={profile.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub profile"
-            className="hidden h-9 w-9 place-items-center rounded-md border border-[var(--border)] muted transition-colors hover:border-[var(--border-strong)] hover:text-[var(--fg)] sm:grid"
-          >
-            <GitHubIcon className="h-4 w-4" />
-          </a>
           <a
             href={profile.resumePath}
             download

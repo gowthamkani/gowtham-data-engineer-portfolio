@@ -1,7 +1,7 @@
 import { profile } from "@/data/profile";
 import { Section } from "./ui";
 import { ContactForm } from "./ContactForm";
-import { GitHubIcon, LinkedInIcon, MailIcon, DownloadIcon, LocationIcon } from "./Icons";
+import { LinkedInIcon, MailIcon, DownloadIcon, LocationIcon } from "./Icons";
 
 const channels = [
   {
@@ -16,13 +16,6 @@ const channels = [
     value: profile.linkedinLabel,
     href: profile.linkedin,
     Icon: LinkedInIcon,
-    external: true,
-  },
-  {
-    label: "GitHub",
-    value: `github.com/${profile.githubUser}`,
-    href: profile.github,
-    Icon: GitHubIcon,
     external: true,
   },
 ];
