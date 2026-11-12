@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     "Data Quality",
     "Gowtham Kani",
   ],
-  authors: [{ name: profile.name, url: profile.github }],
+  authors: [{ name: profile.name }],
   creator: profile.name,
   alternates: { canonical: "/" },
   openGraph: {
@@ -80,7 +80,7 @@ const personJsonLd = {
   jobTitle: profile.title,
   email: `mailto:${profile.email}`,
   url: profile.siteUrl,
-  sameAs: [profile.github, profile.linkedin],
+  sameAs: [profile.linkedin],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Chennai",

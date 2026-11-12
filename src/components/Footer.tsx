@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { profile } from "@/data/profile";
 import { navItems } from "@/data/nav";
-import { GitHubIcon, LinkedInIcon, MailIcon } from "./Icons";
+import { LinkedInIcon, MailIcon } from "./Icons";
 
 export function Footer() {
   return (
@@ -38,7 +38,6 @@ export function Footer() {
           </p>
           <ul className="flex items-center gap-2">
             {[
-              { href: profile.github, label: "GitHub", Icon: GitHubIcon },
               { href: profile.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
               { href: `mailto:${profile.email}`, label: "Email", Icon: MailIcon },
             ].map(({ href, label, Icon }) => (

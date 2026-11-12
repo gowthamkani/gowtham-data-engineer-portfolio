@@ -12,7 +12,7 @@ export function ProfilePhoto() {
   const [failed, setFailed] = useState(false);
 
   return (
-    <div className="relative mx-auto w-full max-w-[18rem] lg:mx-0">
+    <div className="relative mx-auto w-full max-w-[24rem] lg:mx-0">
       <span
         aria-hidden="true"
         className="absolute -inset-3 rounded-2xl border border-[var(--border)]"
@@ -22,7 +22,7 @@ export function ProfilePhoto() {
         className="absolute -right-2 -top-2 h-16 w-16 rounded-full opacity-40 blur-2xl"
         style={{ backgroundColor: "var(--accent)" }}
       />
-      <div className="relative aspect-square overflow-hidden rounded-2xl border border-[var(--border-strong)] bg-[var(--bg-subtle)]">
+      <div className="relative aspect-[5/4] overflow-hidden rounded-2xl border border-[var(--border-strong)] bg-[var(--bg-subtle)]">
         {failed ? (
           <div className="grid-bg grid h-full w-full place-items-center">
             <span className="font-mono text-5xl font-semibold text-[var(--accent)]">GK</span>
@@ -34,8 +34,8 @@ export function ProfilePhoto() {
             alt={`${profile.name}, Data Engineer`}
             fill
             priority
-            sizes="(min-width: 1024px) 18rem, 60vw"
-            className="object-cover object-[center_18%]"
+            sizes="(min-width: 1024px) 24rem, 80vw"
+            className="object-cover object-[center_20%]"
             onError={() => setFailed(true)}
           />
         )}

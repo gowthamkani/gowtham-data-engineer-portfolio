@@ -2,10 +2,9 @@ import { profile } from "@/data/profile";
 import { Button, ArrowRight, Tag } from "./ui";
 import { PipelineVisual } from "./PipelineVisual";
 import { ProfilePhoto } from "./ProfilePhoto";
-import { GitHubIcon, LinkedInIcon, MailIcon, DownloadIcon, LocationIcon, CertIcon } from "./Icons";
+import { LinkedInIcon, MailIcon, DownloadIcon, LocationIcon, CertIcon } from "./Icons";
 
 const secondaryLinks = [
-  { label: "GitHub", href: profile.github, Icon: GitHubIcon, external: true },
   { label: "LinkedIn", href: profile.linkedin, Icon: LinkedInIcon, external: true },
   { label: "Email", href: `mailto:${profile.email}`, Icon: MailIcon, external: false },
 ];
